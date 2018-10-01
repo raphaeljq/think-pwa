@@ -1,12 +1,19 @@
 import React from 'react'
 import {Container, Row, Col} from 'reactstrap'
+
+import workshop from '../imgs/workshop.png'
 const Home = () => (
-    <Container className="text-light">
-        <Row>
-            <Col>
-                <h2>Objetivos do Curso</h2>
-                <p>Facilitar o dia-a-dia dos empreendedores e profissionais de marketing que desejam aprender uma metodologia de Planejamento Estratégico Digital para aplicar nos seus negócios, e em grandes ações de marketing.</p>
-            </Col>
+    <Container className="text-light" fluid>
+        <Row className="verdeFundo">
+            <Container>
+                <Col>
+                    <img src={workshop} className="image-fluid"/>
+                </Col>
+                <Col>
+                    <h2>Objetivos do Curso</h2>
+                    <p>Facilitar o dia-a-dia dos empreendedores e profissionais de marketing que desejam aprender uma metodologia de Planejamento Estratégico Digital para aplicar nos seus negócios, e em grandes ações de marketing.</p>
+                </Col>
+            </Container> 
         </Row>
         <Row>
             <Col>
