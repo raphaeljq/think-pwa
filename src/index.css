@@ -1,20 +1,22 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
 
+/** HEADER.js **/
+
+/** Jubotron **/
 [data-css3] {
   width: 100%;
   background: url(https://www.frontinsampa.com.br/static/media/hero.d9dd097a.jpg) 40% 75% / cover no-repeat;
   
 }
+/** container dentro do jubotron **/
+
 [data-centro] {
 
-  width: 90%;
+    width: 90%;
     height: 770px;
     margin: 0px auto;
 }
+
+/** MEDIA QUERIES JUBOTRON E CONTAINER **/
 @media only screen and (min-width: 768px) {
   [data-css3] {
     background-position: center center;
@@ -27,4 +29,39 @@ body {
     max-width: 1024px;
     height: 100vh;
   }
+}
+
+@media (min-width: 576px) {
+
+  .jumbotron {padding: 0;}
+  
+  
+  }
+
+  /** HERO TEXT **/
+
+  .hero-text {
+    
+    position: relative ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+   
+}
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
+.tituloHeader {
+  line-height: 88%;
+  text-align: right;
+  
+}
+.verde {
+  color: #00AA00;
+}
+
+.robotro {
+  font-family: 'Robotro', sans-serif;
 }
