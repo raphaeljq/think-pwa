@@ -1,4 +1,6 @@
-
+body {
+  background-color: #0D0E15;
+}
 /** HEADER.js **/
 
 /** Jubotron **/
@@ -16,27 +18,7 @@
     margin: 0px auto;
 }
 
-/** MEDIA QUERIES JUBOTRON E CONTAINER **/
-@media only screen and (min-width: 768px) {
-  [data-css3] {
-    background-position: center center;
-  }
-}
 
-
-@media only screen and (min-width: 1024px) {
-  [data-centro] {
-    max-width: 1024px;
-    height: 100vh;
-  }
-}
-
-@media (min-width: 576px) {
-
-  .jumbotron {padding: 0;}
-  
-  
-  }
 
   /** HERO TEXT **/
 
@@ -54,14 +36,53 @@
   font-family: 'Oswald', sans-serif;
 }
 .tituloHeader {
-  line-height: 88%;
-  text-align: right;
+  line-height: 95%;
+  text-align: left;
+  font-size: 5em;
   
 }
-.verde {
-  color: #00AA00;
+.tituloHeaderVerde {
+  font-size: 180%;
+  font-weight: 500;
+  line-height: 120%;
+  }
+.verdeTexto {
+  color: #32AA24;
+}
+.verdeFundo {
+  background-color: #32AA24;
 }
 
 .robotro {
   font-family: 'Robotro', sans-serif;
 }
+
+/** MEDIA QUERIES JUBOTRON E CONTAINER **/
+@media only screen and (min-width: 768px) {
+  [data-css3] {
+    background-position: center center;
+  }
+ 
+}
+
+
+@media only screen and (min-width: 1024px) {
+  [data-centro] {
+    max-width: 1024px;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 576px) {
+
+  .jumbotron {padding: 0;}
+  
+  
+  }
+ @media (max-width: 576px) {
+  .tituloHeader,
+  .tituloHeaderVerde {
+    text-align: center;
+  }
+  
+ } 

@@ -10,9 +10,9 @@ const Header = (props) =>{
             
           <div class="hero-text">
             {/**<h1 class="display-4">Workshop no Amazoom Cowork</h1>**/}
-            <p className="display-4 tituloHeader"><span className="oswald">PLA<br/>NEJA<br/>MENTO<br/></span> <span class="verde"> de marketing Digital</span></p>
+            <p className="display-4 tituloHeader"><span className="oswald">PLA<br/>NEJA<br/>MENTO<br/></span> </p><p><span class="verdeTexto tituloHeaderVerde"> DE MARKETING DIGITAL</span></p>
             <p>Aprenda passo-a-passo como planejar sua campanha digital de sucesso, estabelecendo metas e resultados que você quer alcançar para seus negócios.</p>
-            <Button color="success">Inscreva-se!</Button>
+            <Button color="success" className="verdeFundo">Inscreva-se!</Button>
           </div>
           </Container>
         </Jumbotron>
