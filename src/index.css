@@ -17,17 +17,20 @@ body {
     height: 770px;
     margin: 0px auto;
 }
-
+section {
+  width: 100%;
+}
 
 
   /** HERO TEXT **/
-
+  .hero {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
   .hero-text {
-    
-    position: relative ;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+       
     color: white;
    
 }
@@ -56,6 +59,15 @@ body {
 .robotro {
   font-family: 'Robotro', sans-serif;
 }
+
+
+.logoevento{
+  width: 400px;
+}
+
+.main { padding-top: 50px;}
+/**espaço interno das rows **/
+.row { padding-top: 50px; padding-bottom: 50px; }
 
 /** MEDIA QUERIES JUBOTRON E CONTAINER **/
 @media only screen and (min-width: 768px) {
