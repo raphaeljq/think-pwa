@@ -57,6 +57,24 @@ section {
   background-color: #32AA24;
 }
 
+.keyfundo {
+  background: url('./img/key.png') 40% 75% / cover no-repeat;
+}
+
+.fundoEscuro {
+  background-color: #0b0c14;
+}
+
+.fundoTopicos {
+  background: url('./img/fundo-topicos.png') 40% 75% / cover no-repeat;
+}
+
+.fundoTopicos ul {list-style: square inside url('./img/bullet.png');}
+.fundoTopicos ul li {font-size:18px;}
+
+.fundoInstrutor { background: url('./img/fundo-instrutor.png') 40% 75% / cover no-repeat;}
+.fundoInstrutor img { height: 150px;}
+
 .robotro {
   font-family: 'Robotro', sans-serif;
 }
