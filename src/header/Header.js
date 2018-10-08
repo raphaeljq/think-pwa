@@ -18,7 +18,7 @@ const Header = (props) =>{
                   <img src={planejamento} className="img-fluid planejamento" />
                 
                 </Col>
-                <Col sm="4">
+                <Col sm="4" lg="12">
                   <p>Aprenda passo-a-passo como planejar sua campanha digital de sucesso, estabelecendo metas e resultados que você quer alcançar para seus negócios.</p>
                   <Button color="success" className="verdeFundo">Inscreva-se!</Button>
                 </Col>

@@ -1,12 +1,16 @@
 body {
   background-color: #0D0E15;
+  font-family: 'Roboto',sans-serif;
+
 }
 /** HEADER.js **/
 
 /** Jubotron **/
 [data-css3] {
   width: 100%;
-  background: url('./img/fundo-hero.png') 40% 75% / cover no-repeat;
+  background: url('./img/fundo-hero.png') 40% 90% / cover no-repeat;
+  padding-top: unset;
+  padding-bottom: unset;
   
 }
 /** container dentro do jubotron **/
@@ -19,6 +23,8 @@ body {
 }
 section {
   width: 100%;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 
@@ -65,6 +71,8 @@ section {
   background-color: #0b0c14;
 }
 
+.datahora .container .row img {max-height: 500px}
+
 .fundoTopicos {
   background: url('./img/fundo-topicos.png') 40% 75% / cover no-repeat;
 }
@@ -74,6 +82,9 @@ section {
 
 .fundoInstrutor { background: url('./img/fundo-instrutor.png') 40% 75% / cover no-repeat;}
 .fundoInstrutor img { height: 150px;}
+
+.investimento .container .row .col-12 { padding-bottom: 60px;}
+.investimento .container .row .col-12 img {max-height: 200px;}
 
 .robotro {
   font-family: 'Robotro', sans-serif;
@@ -91,23 +102,25 @@ section {
 
 .main { padding-top: 50px;}
 /**espaço interno das rows **/
-.row { padding-top: 200px; padding-bottom: 50px; }
+section { padding-top: 90px; padding-bottom: 90px; }
 
 .badgeworshop { 
   display: inline-block;
   width: 100%;
-  min-height: 180px;
-  background: url('./img/fundo01.png')  40% 75% / cover no-repeat
+  min-height: 192px;
+  background: url('./img/fundo01.png')  40% 92% / cover no-repeat
   
   
 }
 .badgeworshop img {
   position: absolute;
-  top:10%;
+  width: 32%;
+  top:4%;
+
   
 }
 
-
+.col-lg-12 .btn { font-size:2rem;}
 
 /**
 
@@ -134,20 +147,43 @@ section {
 **/
 
 @media (max-width: 576px) {
-  .row {padding-top: 100px;}
+  [data-css3] {
+    
+    background: url('./img/fundo-hero.png') center center / cover no-repeat;
+    
+  }
+
+  .badgeworshop { 
+    
+    background: url('./img/fundo01.png')  center center / cover no-repeat
+    
+    
+  }
+
+  
+  
   .badgeworshop img {
     width: 32%;
     top:4%;
+
+    
   }
+  .col-lg-12 .btn { font-size:1rem;}
+
+
+  .fundoInstrutor { background: url('./img/fundo-instrutor.png') center center / cover no-repeat;}  
 .header { padding-top: unset;}  
 
 
 [data-centro] { height: 65vh;}
+.datahora .container .row img {max-height: 200px}
+
 }
 
 @media (min-width :760px) {
   .badgeworshop img {
-    width: 20%;
-    top:5%;
+    width: 12%;
+    top:4%;
   }
+  body { font-size: 2rem;}
 }

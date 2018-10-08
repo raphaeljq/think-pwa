@@ -4,6 +4,9 @@ import {Container, Row, Col} from 'reactstrap'
 import workshop from '../img/workshop.png'
 import datahora from '../img/data-hora.png'
 import instrutor from '../img/instrutor.png'
+import lote1 from '../img/lote1.png'
+import lote2 from '../img/lote2.png'
+import lote3 from '../img/lote3.png'
 
 const Home = () => (
 
@@ -38,20 +41,21 @@ const Home = () => (
                     <Col className="text-center">
                     
                     <p>O Marketing é uma das chaves
-que você vai precisar pra abrir as portas para
-o mercado. Quer fazer sua marca ser mais
-conhecida, desejada e vista positivamente
-pelos consumidores?
-Chega pra cá!</p>
+                        que você vai precisar pra abrir as portas para
+                        o mercado. Quer fazer sua marca ser mais
+                        conhecida, desejada e vista positivamente
+                        pelos consumidores?
+                        Chega pra cá!
+                    </p>
                     </Col>
 
                 </Row>
             </Container>
         </section>
-        <section className="text-light fundoEscuro">
+        <section className="text-light fundoEscuro datahora" >
             <Container>
                 <Row>
-                    <Col className="text-center">
+                    <Col xs="12" lg="8" className="d-flex justify-content-center">
                         <img src={datahora}  className="img-fluid"/>
                    
                     </Col>
@@ -83,15 +87,39 @@ Chega pra cá!</p>
                 <Row>
                     <Col xs="12" className="text-center fotoInstrutor">
                         <img src={instrutor} />
-                   
                     </Col>
-                    <Col xs="12" className="text-center"><h3>O Instrutor</h3></Col>
-
+                    <Col xs="12" className="text-center">
+                        <h3>O Instrutor</h3>
+                        <p>Professor de Branding e marketing, especialista
+                        em Marketing Digital, nosso CEO
+                        Nyl Barbosa vai mostrar passo a passo
+                        como é possível otimizar sua marca para o
+                        mundo digital e impulsionar seu negócio.
+                         </p>
+                    </Col>
                 </Row>
             </Container>
-        </section>                 
-             
-
+        </section>
+        <section className="text-light fundoEscuro investimento">
+            <Container>
+                <Row>
+                    <Col>
+                        <h2 className="text-center">Investimento</h2>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs="12" lg="4" className="d-flex justify-content-center">
+                        <img src={lote1} />
+                    </Col>
+                    <Col xs="12" lg="4" className="d-flex justify-content-center">
+                        <img src={lote2} className="img-fluid"/>
+                    </Col>
+                    <Col xs="12" lg="4" className="d-flex justify-content-center">
+                        <img src={lote3} className="img-fluid"/>
+                    </Col>
+                </Row>
+            </Container>
+        </section>                  
     </main>
 
 
